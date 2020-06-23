@@ -2,10 +2,13 @@
 Input: a List of integers where every int except one shows up twice
 Returns: an integer
 '''
+
+
 def single_number(arr):
     # Your code here
-
-    pass
+    # using set() to remove duplicates from list
+    # source: https://www.geeksforgeeks.org/python-ways-to-remove-duplicates-from-list/
+    return 2 * sum(set(arr)) - sum(arr)
 
 
 if __name__ == '__main__':
